@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="student_management_register" name="Estudiantes">
+        <t t-call="web.frontend_layout">
+            <owl-component name="Students"/>
+        </t>
+    </template>
+</odoo>

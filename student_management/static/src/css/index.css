@@ -1,0 +1,106 @@
+.student-container {
+    padding: 20px;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.messages {
+    background-color: #ffe6e6;
+    border: 1px solid #ffb3b3;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.message {
+    color: #cc0000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.filter {
+    margin-bottom: 15px;
+}
+
+.filter input {
+    padding: 8px 12px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.filter input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 3px #4caf50;
+    outline: none;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+thead th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    padding: 12px;
+    font-size: 15px;
+}
+
+tbody td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f7f1;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    table thead {
+        display: none;
+    }
+
+    table, table tbody, table tr, table td {
+        display: block;
+        width: 100%;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        padding: 8px;
+        border-radius: 6px;
+    }
+
+    table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+}
